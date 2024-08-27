@@ -46,15 +46,7 @@ const userSchema=new mongoose.Schema({
 
 const Usermodel = mongoose.model('User', userSchema);
 
-const createUser = async () => {
-  const user = new Usermodel({ username:"HaMiit",
-  password:"asdafdfasf",
-  firstName:"Tyioper",
-  lastName:"Umar"
-   });
-  await user.save();
-  console.log('User saved:', user);
-};
+
 
 createUser();
 module.exports = {
